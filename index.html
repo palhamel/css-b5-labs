@@ -7,85 +7,86 @@
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <title>Bootstrap 5 lab</title>
 
-    <style>
-      [class*='col'] {
+    <!-- <style>
+      /* [class*='col'] {
         padding: 1rem;
         background-color: rgb(102, 212, 249);
         border: 1px solid rgb(0, 136, 255);
         color: white;
         text-align: center;
-      }
+      } */
       [class*='con'] {
         padding: 1rem;
         /* background-color: rgb(234, 0, 255);
         border: 2px solid white; */
-        background-color: rgb(252, 243, 252);
-        border: 1px solid rgb(255, 155, 255);
-        color: white;
-        text-align: center;
+        background-color: rgb(242, 254, 242);
+        border: 1px solid rgb(155, 255, 167);
+        color: rgb(43, 43, 43);
+        /* text-align: center; */
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <h1>Bootstrap 5 Lab</h1>
     <!-- auto resize cols: -->
-    <h4>Auto resize cols</h4>
-
-    <br>
-
-    <div class="container-md">
-      <div class="row">
-        <div class="col-sm">1</div>
-        <div class="col-sm">2</div>
-        <div class="col-sm">3</div>
-      </div>
-      <div class="row">
-        <div class="col-sm">1</div>
-        <div class="col-sm">2</div>
-      </div>
-    </div>
-
+    <h4>Components</h4>
     <br>
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-8">Main Content</div>
-        <div class="col-md-4">Sidebar</div>
-      </div>
-    </div>
+      
+      <h3>Buttons</h3>
 
-    <br>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+      <button type="button" class="btn btn-link">Link</button>
+      <br>
+      <br>
+      <button type="button" class="btn btn-primary btn-lg">Primary</button>
+      <button type="button" class="btn btn-primary btn-sm">Primary</button>
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+      <button type="button" class="btn btn-primary" disabled >Primary</button>
+      <br>
+      <br>
 
-    <h4>Gutter space - horizontal</h4>
+      <h3>Cards</h3>
+      <h5>Card with inline styling:</h5>
 
-    <div class="container px-4">
-      <div class="row gx-2">
-        <div class="col">
-         <div class="p-3 border">Custom column padding</div>
+        <div class="card" style="width:18rem;">
+          <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            b5
+          </div>
         </div>
-        <div class="col">
-          <div class="p-3 border">Custom column padding</div>
-        </div>
-      </div>
-    </div>
-<br>
-<h4>Gutter space - vertical</h4>
+        <br>
+        <br>
+        <h5>Card with bootstrap grid styling:</h5>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted ">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                b5
+              </div>
 
-    <div class="container overflow-hidden">
-      <div class="row gy-5">
-        <div class="col-6">
-          <div class="p-3 border">Custom column padding</div>
+          </div>
         </div>
-        <div class="col-6">
-          <div class="p-3 border">Custom column padding</div>
-        </div>
-        <div class="col-6">
-          <div class="p-3 border">Custom column padding</div>
-        </div>
-        <div class="col-6">
-          <div class="p-3 border">Custom column padding</div>
-        </div>
-      </div>
+
+
+
+
+
     </div>
 
 
