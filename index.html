@@ -8,14 +8,14 @@
     <title>Bootstrap 5 lab</title>
 
     <style>
-      [class*="col"] {
+      [class*='col'] {
         padding: 1rem;
         background-color: rgb(102, 212, 249);
         border: 1px solid rgb(0, 136, 255);
         color: white;
         text-align: center;
       }
-      [class*="con"] {
+      [class*='con'] {
         padding: 1rem;
         /* background-color: rgb(234, 0, 255);
         border: 2px solid white; */
@@ -27,6 +27,11 @@
     </style>
   </head>
   <body>
+    <h1>Bootstrap 5 Lab</h1>
+    <!-- auto resize cols: -->
+    <h4>Auto resize cols</h4>
+
+    <br>
 
     <div class="container-md">
       <div class="row">
@@ -40,13 +45,51 @@
       </div>
     </div>
 
-    
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">Main Content</div>
+        <div class="col-md-4">Sidebar</div>
+      </div>
+    </div>
+
+    <br>
+
+    <h4>Gutter space - horizontal</h4>
+
+    <div class="container px-4">
+      <div class="row gx-2">
+        <div class="col">
+         <div class="p-3 border">Custom column padding</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border">Custom column padding</div>
+        </div>
+      </div>
+    </div>
+<br>
+<h4>Gutter space - vertical</h4>
+
+    <div class="container overflow-hidden">
+      <div class="row gy-5">
+        <div class="col-6">
+          <div class="p-3 border">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border">Custom column padding</div>
+        </div>
+      </div>
+    </div>
 
 
-
-
-
-    <!-- Bootstrap  start -->
+    <!-- Bootstrap  JS start -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
       integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
@@ -54,6 +97,6 @@
     ></script>
     <script src="./js/bootstrap.bundle.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script> -->
-    <!-- Bootstrap  end -->
+    <!-- Bootstrap  JS end -->
   </body>
 </html>
