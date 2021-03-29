@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="bm-custom.css">
     <title>Bootstrap 5 lab</title>
   </head>
   <body class="bg-light">
@@ -27,7 +28,7 @@
           class="navbar-collapse offcanvas-collapse"
           id="navbarsExampleDefault"
         >
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"
                 >Dashboard</a
@@ -59,8 +60,8 @@
                 </li>
               </ul>
             </li>
-          </ul>
-          <form class="d-flex">
+          </ul> -->
+          <!-- <form class="d-flex">
             <input
               class="form-control me-2"
               type="search"
@@ -70,7 +71,7 @@
             <button class="btn btn-outline-success" type="submit">
               Search
             </button>
-          </form>
+          </form> -->
         </div>
       </div>
     </nav>
@@ -92,34 +93,88 @@
       </div> -->
       <br />
       <br />
+
+      <!-- Search box -->
+
+
+
       <!-- Updates box 1 -->
 
 
-      <div class="my-3 p-3 bg-body rounded shadow-sm">
-        <h6 class="border-bottom pb-2 mb-0">Recent interactions</h6>
-        <div class="d-flex text-muted pt-3">
+      <div class="my-3 p-3 bg-body rounded shadow-sm" style="border: 1px solid #FF9AD9;">
+        <h6 class="pb-2 mb-0" style="color: #FF9AD9; font-weight: bold;">Hey, look at this!</h6>
+        
+        <div class="d-flex text-muted pt-3 mb-2" style="background: #FDEFF8; border-radius: 4px;">
           <svg
             class="bd-placeholder-img flex-shrink-0 me-2 rounded"
-            width="32"
+            width="12"
             height="32"
             xmlns="http://www.w3.org/2000/svg"
             role="img"
-            aria-label="Placeholder: 32x32"
+            aria-label="Placeholder: "
             preserveAspectRatio="xMidYMid slice"
             focusable="false"
           >
-            <title>Placeholder</title>
-            <!-- <rect width="100%" height="100%" fill="#007bff" ></rect> -->
-            <!-- <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text> -->
           </svg>
 
-          <p class="pb-3 mb-0 small lh-sm border-bottom">
-            <strong class="d-block text-gray-dark">@username</strong>
-            Some representative placeholder content, with some information about
-            this user. Imagine this being some sort of status update, perhaps?
+          <p class="pb-3 mb-0 small lh-sm">
+            <strong class="text-gray-dark">Dagens Samhälle </strong>hasn't heard from you in 6 months. Contact <strong style="color: #C6007C; font-weight: 500;">Christina Kennedy</strong>
           </p>
         </div>
-        <div class="d-flex text-muted pt-3">
+        <div class="d-flex text-muted pt-3 mb-2" style="background: #FDEFF8; border-radius: 4px;">
+          <svg
+            class="bd-placeholder-img flex-shrink-0 me-2 rounded"
+            width="12"
+            height="32"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: "
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+          </svg>
+
+          <p class="pb-3 mb-0 small lh-sm">
+            <strong class="text-gray-dark">Stampen Local Media </strong>has a contract that expires in 3 months. <strong style="color: #C6007C; font-weight: 500;">Look at the current agreement</strong>
+          </p>
+        </div>
+        <div class="d-flex text-muted pt-3 mb-2" style="background: #FDEFF8; border-radius: 4px;">
+          <svg
+            class="bd-placeholder-img flex-shrink-0 me-2 rounded"
+            width="12"
+            height="32"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: "
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+          </svg>
+
+          <p class="pb-3 mb-0 small lh-sm">
+            <strong class="text-gray-dark">Sydsvenskan </strong>has 3 failed login attempts last week. Contact <strong style="color: #C6007C; font-weight: 500;">Ulf Jarevik</strong>
+          </p>
+        </div>
+        <div class="d-flex text-muted pt-3 mb-2" style="background: #FDEFF8; border-radius: 4px;">
+          <svg
+            class="bd-placeholder-img flex-shrink-0 me-2 rounded"
+            width="12"
+            height="32"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: "
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+          </svg>
+
+          <p class="pb-3 mb-0 small lh-sm">
+            <strong class="text-gray-dark">Daniel Stiller </strong>added you to <strong class="text-gray-dark">Riksidrottsförbundet</strong>. <strong style="color: #C6007C; font-weight: 500;">View client</strong>
+          </p>
+        </div>
+
+
+        <div class="d-flex text-muted pt-3 mb-2" style="background: #FDEFF8; border-radius: 4px;">
           <svg
             class="bd-placeholder-img flex-shrink-0 me-2 rounded-circle"
             width="32"
@@ -130,18 +185,19 @@
             preserveAspectRatio="xMidYMid slice"
             focusable="false"
           >
-            <title>Placeholder</title>
+            <!-- <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#e83e8c"></rect>
-            <text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text>
+            <text x="50%" y="50%" fill="#e83e8c" dy=".3em">32x32</text> -->
           </svg>
 
-          <p class="pb-3 mb-0 small lh-sm border-bottom">
-            <strong class="d-block text-gray-dark">@username</strong>
-            Some more representative placeholder content, related to this other
-            user. Another status update, perhaps.
+          <p class="pb-3 mb-0 small lh-sm ">
+            <strong class="d-block text-gray-dark">@someone</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, culpa.
           </p>
         </div>
-        <div class="d-flex text-muted pt-3">
+
+
+        <div class="d-flex text-muted pt-3 mb-2">
           <svg
             class="bd-placeholder-img flex-shrink-0 me-2 rounded"
             width="32"
@@ -157,15 +213,13 @@
             <!-- <text x="50%" y="50%" fill="#6f42c1" dy=".3em">32x32</text> -->
           </svg>
 
-          <p class="pb-3 mb-0 small lh-sm border-bottom">
-            <strong class="d-block text-gray-dark">@username</strong>
-            This user also gets some representative placeholder content. Maybe
-            they did something interesting, and you really want to highlight
-            this in the recent updates.
+          <p class="pb-3 mb-0 small lh-sm">
+            <strong class="d-block text-gray-dark">@someone</strong>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus porro optio ipsa rerum totam, aut cum iusto iste assumenda?
           </p>
         </div>
         <small class="d-block text-end mt-3">
-          <a href="#">All updates</a>
+          <a href="#">View all</a>
         </small>
       </div>
 
@@ -173,9 +227,9 @@
       <!-- Updates box 2 -->
 
       <div class="my-3 p-3 bg-body rounded shadow-sm">
-        <h6 class="border-bottom pb-2 mb-0">Recent interactions</h6>
+        <h6 class="pb-2 mb-0">Recent interactions</h6>
         <div class="d-flex text-muted pt-3">
-          <svg
+          <!-- <svg
             class="bd-placeholder-img flex-shrink-0 me-2 rounded"
             width="32"
             height="32"
@@ -188,15 +242,20 @@
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#007bff"></rect>
             <text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text>
-          </svg>
+          </svg> -->
 
-          <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
-            <div class="d-flex justify-content-between">
+          <div class="p-3 mb-2 small lh-sm w-100 bg-light rounded">
+            <div class="d-flex ">
+              January 26 at 13:23
               <strong class="text-gray-dark">Full Name</strong>
-              <a href="#">View client</a>
             </div>
             <span class="d-block">@username</span>
           </div>
+          <div class="p-3 mb-2 small lh-sm bg-light rounded">
+            <a class="" href="#" >View client</a>
+          </div>
+          <!-- <div class="p-2">Flex item</div> -->
+          <!-- <div class="ml-auto p-2">Flex item</div> -->
         </div>
         <div class="d-flex text-muted pt-3">
           <svg
