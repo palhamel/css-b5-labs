@@ -8,13 +8,13 @@
     <title>Bootstrap 5 lab</title>
   </head>
   <body>
-    <h1>Bootstrap 5 Lab</h1>
+    <!-- <h1>Bootstrap 5 Lab</h1> -->
     <!-- auto resize cols: -->
     <h4>Components</h4>
     <br />
 
     <div class="container">
-      <h3>Alert box</h3>
+      <h5>Alert box</h5>
       <br />
       <br />
       <div class="alert" role="alert" style="background: #fdeff8">
@@ -52,18 +52,18 @@
         ></button>
       </div>
       <br /><br />
-      <h3>Toast box</h3>
+      <h5>Toast box</h5>
       <br />
 
-      <div id="toast" class="toast" data-animation="true" data-bs-autohide="false" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
+      <div id="toast" class="toast" data-animation="true" data-bs-autohide="false" role="alert" aria-live="assertive" aria-atomic="true" style="position: fixed; bottom: 200px; right: 30px; " >
+        <div class="toast-header" style="background: #fdeff8">
           <!-- <img src="#" class="rounded me-2" alt="..."> -->
           <strong class="me-auto">Yo! Message here!</strong>
           <small>11 mins ago</small>
           <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
-        <div class="toast-body">
-          Hello, world! This is a message. And it will stick here. Forever..
+        <div class="toast-body" >
+          Hello, world! This is a message. And it will stick here forever..or not. (JS options)
         </div>
       </div>
 
@@ -107,7 +107,12 @@
     <script>
       let toastElementList = [].slice.call(document.querySelectorAll('.toast'))
       let toastList = toastElementList.map((toastElement) => {
-        return new bootstrap.Toast(toastElement)
+        option = {
+          delay: 6000,
+          animation: true,
+          autohide: true,
+        }
+        return new bootstrap.Toast(toastElement, option)
       })
       console.log(toastList[0])
       toastList[0].show()
